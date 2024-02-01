@@ -1,12 +1,12 @@
 function deepEqual(value, reference) {
   if (value === reference){
-    console.log(`true`);
+  return `true`;
   }
   else if (value == reference){
-    console.log(`true`);
+    return `true`;
   }
   else {
-    console.log(`false`);
+    return `false`;
   }
 };
 

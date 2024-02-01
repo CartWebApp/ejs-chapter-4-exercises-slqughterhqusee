@@ -1,9 +1,26 @@
 function range(start, end, step = 1) {
-  // Add code.
+  let array = [];
+  if (step > 0) {
+    for (i = start; i <= end; i++) {
+      start + step;
+      array.push(i);
+    }
+  }
+  else {
+    for (i = start; i >= end; i--) {
+      start - step;
+      array.push(i);
+    }
+  }
+  return array;
 }
 
-function sum(numbers) {
-  // Add code.
+function sum(arraynum) {
+  let sum = 0;
+  for(i=0;i<arraynum.length;i++){
+    sum+=arraynum[i];
+  }
+  return sum;
 }
 
 
