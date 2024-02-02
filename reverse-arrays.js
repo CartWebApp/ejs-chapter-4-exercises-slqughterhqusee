@@ -1,9 +1,19 @@
 function reverseArray(arr) {
-  // Add code.
+  const array = [];
+  for (i = arr.length - 1; i >= 0; i--) {
+    array.push(arr[i]);
+  }
+  return array;
 }
 
 function reverseArrayInPlace(arr) {
-  // Add code.
+  for (i = arr.length - 1; i >= 0; i--) {
+    arr.push(arr[i]);
+  }
+  for (i = arr.length / 2 - 1; i >= 0; i--) {
+    arr.shift();
+  }
+  return arr;
 }
 
 
@@ -15,6 +25,6 @@ function reverseArrayInPlace(arr) {
 console.log(reverseArray(["A", "B", "C"]));
 // → ["C", "B", "A"];
 let arrayValue = [1, 2, 3, 4, 5];
-reverseArrayInPlace(arrayValue);
+arrayvalue = reverseArrayInPlace(arrayValue);
 console.log(arrayValue);
 // → [5, 4, 3, 2, 1]
