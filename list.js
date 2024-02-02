@@ -10,6 +10,7 @@ function arrayToList([start, end]) {
       }
     }
   }
+  return list;
 };
 
 function listToArray(list, arr) {
